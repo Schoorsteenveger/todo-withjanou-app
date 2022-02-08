@@ -3,23 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #9f9f9f 0%, #b8958c 100%);
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
+
 header {
-  font-size: 3rem;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-header,
+
 form {
   min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 form input,
 form button {
   padding: 0.5rem;
@@ -27,16 +34,19 @@ form button {
   border: none;
   background: rgb(240, 240, 240);
 }
+
 form button {
-  color: #47ff4d;
-  background: #f7fffe;
+  color: #688c69;
+  background: #d3d1d1;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 form button:hover {
-  background: #ff6f47;
+  background: #fa8564;
   color: white;
 }
+
 .todo-container {
   display: flex;
   justify-content: center;
@@ -133,7 +143,7 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #47afff;
   cursor: pointer;
   pointer-events: none;
 }
@@ -147,10 +157,10 @@ select {
    text-decoration: line-through;
 }
 
-/* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  form {
+    width: 86vmin;
+  }
 }
-*/
 
